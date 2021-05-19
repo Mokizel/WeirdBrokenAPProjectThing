@@ -1,0 +1,17 @@
+private static final int width = 64, height = 64;
+	
+	public static BufferedImage grassTile, dirtTile, waterTile1, waterTile2, waterTile3, rockTile, sandTile, pathTile, treeTile;
+
+	public static void init(){
+		SpriteSheet sheet = new SpriteSheet(BufferedImageLoader.loadImage("/StormVault_PixelArt_SpriteSheet_AllAssets.png"));
+		
+		grassTile = sheet.grabSection(0, 0, 64, 64);
+		dirtTile = sheet.grabSection(64, 0, 64, 64);
+		waterTile1 = sheet.grabSection(128, 0, 64, 64);
+		waterTile2 = sheet.grabSection(192, 0, 64, 64);
+		waterTile3 = sheet.grabSection(256, 0, 64, 64);
+		rockTile = sheet.grabSection(320, 0, 64, 64);
+		sandTile = sheet.grabSection(384, 0, 64, 64);
+		pathTile = sheet.grabSection(448, 0, 64, 64);
+		treeTile = sheet.grabSection(512, 0, 64, 64);
+	}
